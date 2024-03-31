@@ -7,347 +7,192 @@
     <title>STORE</title>
     <style>
         body {
+            margin: 0;
+            padding: 0;
             background-image: url(https://png.pngtree.com/background/20230614/original/pngtree-ecommerce-website-with-shopping-cart-with-the-shopping-cart-on-a-picture-image_3515047.jpg);
-            overflow-x: hidden;
-            
-           margin: 0;
-           padding: 0;
-           height: 100%;
-            
-           
-            opacity: 1.7;
-            
+            background-size: cover;
+            font-family: Arial, sans-serif;
         }
-     
 
         .storename {
             font-weight: bolder;
-            font-size: xx-large;
+            font-size: 2rem;
             width: fit-content;
             padding-top: 20px;
             background: linear-gradient(90deg, #ff9933, #ffffff, #138808);
             color: transparent;
             -webkit-background-clip: text;
             background-clip: text;
-            position: relative;
-            animation: store 2s ease 0s 1 normal forwards;
-
+            text-align: center;
+            margin: 0 auto;
+            max-width: 90%;
         }
 
-        @keyframes store {
-
-            0% {
-                animation-timing-function: ease-in;
-                opacity: 1;
-                transform: translateY(-55px);
-            }
-
-            24% {
-                opacity: 1;
-            }
-
-            40% {
-                animation-timing-function: ease-in;
-                transform: translateY(-24px);
-            }
-
-            65% {
-                animation-timing-function: ease-in;
-                transform: translateY(-12px);
-            }
-
-            82% {
-                animation-timing-function: ease-in;
-                transform: translateY(-6px);
-            }
-
-            93% {
-                animation-timing-function: ease-in;
-                transform: translateY(-4px);
-            }
-
-            25%,
-            55%,
-            75%,
-            87% {
-                animation-timing-function: ease-out;
-                transform: translateY(0px);
-            }
-
-            100% {
-                animation-timing-function: ease-out;
-                opacity: 1;
-                transform: translateY(0px);
-            }
-
-
-        }
-
-        /*  @keyframes store {
-	0% {
-		opacity: 0;
-		transform: translateY(-250px) rotate(-200deg);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateY(0) rotate(0deg);
-	}
-}*/
-        .navigation {
+        nav {
             display: flex;
-            border-radius: 60px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            max-width: 90%;
+            margin: 0 auto;
+            color: white;
+            border: 2px 2px white;
+            border-radius: 50px;
+        }
+
+        ul.navigation {
+            display: flex;
+            align-items: center;
             list-style: none;
-            border: 2px solid black;
-            height: 50px;
-            width: 1100px;
-            background-color: white;
-            box-shadow: 10px 10px 10px black;
-
-
+            margin: 0;
+            padding: 0;
         }
 
         .items {
-            margin-left: 30px;
-            margin-top: 15px;
+            margin-right: 20px;
             font-weight: bold;
             cursor: pointer;
-
-
-        }
-
-        .items:hover {
-            transform: scale(1.4);
-        }
-
-        #home {
-            color: red;
-            margin-top: 15px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        .first {
-            color: rgba(255, 0, 0, 0.747);
-            font-size: 70px;
-
-
-        }
-
-        .second {
-            font-size: 70px;
-        }
-
-        #para {
-            width: 300px;
-            color: black;
-        }
-
-        #shop {
-            width: 120px;
-            height: 35px;
-            background-color: red;
-            border-radius: 30px;
-
-            box-shadow: 5px 5px 6px black;
-        }
-
-        #shop:hover {
-            cursor: pointer;
-            background-color: blue;
-        }
-
-        #section {
-            position: relative;
-            left: 100px;
-            top: 50px;
         }
 
         #search {
             border-radius: 50px;
-            position: relative;
-            left: 900px;
-            bottom: 50px;
+            padding: 10px 20px;
+            border: none;
+            width: 200px;
+            display: flex;
+            justify-content: center;
         }
 
-        #image img {
-            width: 400px;
-            height: 400px;
-            position: relative;
-            left: 700px;
-            bottom: 300px;
-            border-radius: 20px;
-            box-shadow: 10px 10px 10px rgba(255, 0, 0, 0.582);
-            cursor: pointer;
-
+        main {
+            text-align: center;
+            padding: 50px 0;
+            max-width: 90%;
+            margin: 0 auto;
         }
 
-        #image :hover {
-            transform: scale(1.1);
-        }
-
-        .foot {
-            background-color: black;
-        }
-
-        .border {
-            background-color: white;
-            height: 300px;
-            border-radius: 10px;
-            box-shadow: -10px -10px 12px violet;
-
-        }
-
-        #support img {
-            max-height: 100px;
-            height: 100%;
-            position: relative;
-            left: 64px;
-            top: 82px;
-
-        }
-
-        #dedsup {
-            font-weight: bolder;
-            padding: 86px;
-            position: relative;
-            right: 59px;
-            font-size: 26px;
-        }
-
-        .fade img {
-            max-height: 100px;
-            height: 100%;
-            padding-left: 332px;
-            position: relative;
-            bottom: 265px;
-        }
-
-        .fast {
-            padding-left: 300px;
-            position: relative;
-            bottom: 240px;
-            font-size: 21px;
-            font-weight: bolder;
-        }
-        .seo img{
-            max-height: 100px;
-    height: 100%;
-    position: relative;
-    padding-left: 600px;
-    bottom: 390px
-        }
-        #seo{
-            position: relative;
-    bottom: 347px;
-    font-weight: bolder;
-    font-size: 22px;
-    right: 134px;
-        }
-        .keep{
-            position: relative;
-            bottom: 500px;
-            font-weight: bolder;
-            font-style: italic;
-            font-size: 40px;
-            text-shadow: 10px 10px 10px goldenrod;
-        }
-        .all{
-            padding-left: 900px;
-        
-            position: relative;
-            bottom: 420px;
+        .promotion {
+            font-size: 3rem;
             font-weight: bold;
-            font-size: large;
+            margin-bottom: 20px;
+            color: rgba(255, 0, 0, 0.747);
         }
-        .container{
-            height: fit-content;
-        
+
+        #para {
+            color: white;
+            margin-bottom: 30px;
+            width: 70vw;
+        }
+
+        #shop {
+            width: 150px;
+            height: 50px;
+            background-color: red;
+            border-radius: 25px;
+            border: none;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #shop:hover {
+            background-color: blue;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            max-width: 100%;
+            height: 127px;
+            margin: 0 auto;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contact-info p {
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .contact-info img {
+            max-height: 40px;
+            vertical-align: middle;
+        }
+
+        @media screen and (max-width: 768px) {
+            .storename,
+            nav,
+            main,
+            footer {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <header class="storename">
-            RISHABH'S STORE
-        </header>
-        <nav>
-            <ul class="navigation">
-                <li id="home" class="items" id="shop" onclick="shope()">STORE
-                </li>
-                <li class="items" id="login" onclick="login()">LOGIN</li>
-                <li class="items" id="about"  onclick="about()">ABOUT US</li>
-                <li class="items" id="help" onclick="help()">HELP</li>
+    <header class="storename">
+        RISHABH'S STORE
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li id="home" class="items" onclick="shope()">STORE</li>
+            <li class="items" onclick="login()">LOGIN/Signup</li>
+            <li class="items" onclick="about()">ABOUT US</li>
+            <li class="items" onclick="help()">HELP</li>
+        </ul>
+        <input type="search" name="" id="search" placeholder="search">
+    </nav>
+    <main>
+        <div class="promotion">sale 20% off</div>
+        <div class="promotion">on Everything</div>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quasi blanditiis, quae modi
+            veniam error rerum sed et quod molestias odit incidunt recusandae aliquam totam doloremque numquam non.
+            Fuga, eius.</p>
+        <button id="shop" onclick="shop()">SHOP NOW</button>
+    </main>
+    <footer>
+        <div class="contact-info">
+            <img src="https://team90degree.com/shopify/tf/drou-preview/img/support.png" alt="">
+            <p>Dedicated Support</p>
+            <img src="https://team90degree.com/shopify/tf/drou-preview/img/speed.png" alt="">
+            <p class="fast">FAST DELIVERY</p>
+            <img src="https://team90degree.com/shopify/tf/drou-preview/img/seo.png" alt="">
+            <p>SEO FRIENDLY</p>
+            <p class="keep">KEEP IN TOUCH</p>
+        </div>
+        <div class="contact-info">
+            <p class="all">Contact Number: xxxxxxxxx | Email: xxxx@gmail.com | Address: xx xxx xxx xx xx</p>
+        </div>
+    </footer>
+    <script>
+        function shope() {
+            alert('Welcome to your store');
+            window.location.href = 'e-com2.html';
+        }
 
-            </ul>
-            <input type="search" name="" id="search" placeholder="search">
-        </nav>
-        <section id="section">
-            <div class="first">sale 20% off</div>
-            <div class="second">on Everything</div>
-            <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quasi blanditiis, quae modi
-                veniam error rerum sed et quod molestias odit incidunt recusandae aliquam totam doloremque numquam non.
-                Fuga, eius.</p>
-            <button id="shop"  onclick="shop()">SHOPE NOW</button>
+        function help() {
+            window.location.href = 'help.html';
+        }
 
-        </section>
-        <article><span id="image" onclick="shope()">
-                <img src="https://img.freepik.com/premium-photo/flat-cartoon-style-shop-facade-front-view-modern-flat-storefront-supermarket-design_685067-2440.jpg?w=2000"
-                    alt=""></span>
-        </article>
-        <footer class="border">
-            <div>
-                <span id="support">
-                    <img src="https://team90degree.com/shopify/tf/drou-preview/img/support.png" alt="">
-                    <p id="dedsup">Dedicated Support</p>
-                </span>
-                <span class="fade">
-                    <img src="https://team90degree.com/shopify/tf/drou-preview/img/speed.png" alt="">
-                    <header class="fast">FAST DELIVERY</header>
-                </span>
-                <div class="seo"> 
-                    <img src="https://team90degree.com/shopify/tf/drou-preview/img/seo.png" alt="">
-                    <span id="seo">SEO FRIENDLY</span>
-                    <span class="keep">KEEP IN TOUCH</span>
-                    <span>
-                        <div class="all">
-                             contact number : xxxxxxxxx; <br>
-                             e-mail : xxxx@gmail.com;<br>
-                             Address : xx xxx xxx xx xx;<br>
-                        </div>
-                    </span>
-                </div>
-            </div>
+        function about() {
+            window.location.href = 'about.html';
+        }
 
-        </footer>
-    </div>
+        function login() {
+            window.location.href = 'login.html';
+        }
 
-
+        function shop() {
+            window.location.href = 'sales.html';
+        }
+    </script>
 </body>
-<script>
-function shope(){
-  let shope = document.getElementById('image')
-
-   alert = alert('welcome to your store');
-  window.location.href = 'e-com2.html';
-}
-function help(){
-    let help = document.getElementById('help')
-    window.location.href = 'help.html';
-}
- function about(){
-    let about = document.getElementById('about');
-    window.location.href = 'about.html'
- }
- function login(){
-    let login = document.getElementById('login');
-    window.location.href ='login.html';
- }
- function shop(){
-    window.location.href = 'sales.html'
- }
- 
-</script>
 
 </html>

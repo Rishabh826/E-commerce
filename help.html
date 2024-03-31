@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Help - Your E-Commerce Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            background: linear-gradient(120deg,yellow,rgb(161, 161, 26),yellow);
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+
+        }
+        h2:hover{
+            cursor: pointer;
+        }
+
+        .faq {
+            margin-bottom: 20px;
+        }
+
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .answer {
+            display: none;
+            margin-top: 10px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+        
+        img {
+            border: 2px solid black;
+            border-radius: 100px;
+            width: 150px;
+            position: relative;
+            left: 20px;
+        
+            animation: moving;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+        }
+        .search input {
+            width: 400px;
+            height: 40px;
+            border-radius: 100px;
+            padding-left: 30px;
+            padding-top: 5px;
+           
+        }
+        @keyframes moving {
+            0%{
+                left: 0;
+            }
+            50%{
+                left: 150px;
+            }
+            100%{
+                left: 0;
+            }
+            
+        }
+        .search{
+          padding-left: 20px;
+      
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Your E-Commerce Store</h1>
+    </header>
+
+    <section>
+        <h2>Customer Help</h2>
+
+        <p>Welcome to our Customer Help Center! If you have any questions or concerns, please check the FAQs below. If you can't find the information you need, feel free to reach out to our support team.</p>
+
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer('q1')">How can I track my order?</div>
+            <div class="answer" id="q1">You can track your order by logging into your account and navigating to the order history page.</div>
+        </div>
+
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer('q2')">What payment methods do you accept?</div>
+            <div class="answer" id="q2">We accept various payment methods, including credit cards, PayPal, and more. You can find the complete list during the checkout process.</div>
+        </div>
+
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer('q3')">How can I return an item?</div>
+            <div class="answer" id="q3">To initiate a return, go to your account, select the order containing the item you want to return, and follow the instructions. Make sure to check our return policy for eligibility.</div>
+        </div>
+
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer('q4')">Do you offer international shipping?</div>
+            <div class="answer" id="q4">Yes, we do offer international shipping. Shipping costs and delivery times vary based on the destination. Please check our shipping information for details.</div>
+        </div>
+
+      
+
+    </section>
+
+        <div class="bot">
+            <img src="https://botnation.ai/site/wp-content/uploads/2022/02/meilleur-chatbot.jpg" alt="">
+        </div>
+        <div class="search">
+            <input type="search" placeholder=" CHAT WITH US ...." id="">
+        </div>
+    
+
+    <script>
+        function toggleAnswer(questionId) {
+            var answer = document.getElementById(questionId);
+            answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+
+</body>
+</html>

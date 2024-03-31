@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-Commerce Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .product:hover{
+            background-color: aqua;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        
+        h2 {
+            color: black;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            text-shadow: 10px 5px 5px black;
+        }
+
+        .container1 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background-image: url(https://img.freepik.com/premium-photo/young-bearded-man-model-fashion-sitting-urban-step-wearing-casual-clothes_1139-1325.jpg);
+            opacity: 1.5;
+        
+            
+        }
+        .container2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background-image: url(https://www.ecommerce-mag.com/hubfs/h-ng-nguy-n-256537-unsplash%20%281%29.jpg);
+        }
+        .container3 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background-image: url(https://media.licdn.com/dms/image/D4D12AQFifWk_9B65rQ/article-cover_image-shrink_600_2000/0/1681894467016?e=2147483647&v=beta&t=OcaSyNx0xgcxOTnnumRKJ4D-74hicix1PU3YfIsXc74);
+        }
+        .container4 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background-image: url(https://omisell.com/wp-content/uploads/2021/08/Cell-Phone-Accessories-Business-Plan-768x461.jpg);
+        }
+        .container5 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background-image: url(https://cdn.pixabay.com/photo/2021/07/13/09/50/e-commerce-6463068_1280.png);
+        }
+
+        .category {
+            width: 30%;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My E-Commerce Store</h1>
+    </header>
+
+    <nav>
+        <a href="#mens">Men's</a>
+        <a href="#womens">Women's</a>
+        <a href="#kids">Kids</a>
+        <a href="#accessories">Accessories</a>
+        <a href="#sale">Sale</a>
+    </nav>
+
+    <section id="mens" class="container1">
+        <div class="category">
+            <h2>Men's Section</h2>
+            <div class="product">Product 1</div>
+            <div class="product">Product 2</div>
+            <div class="product">Product 3</div>
+        </div>
+    </section>
+
+    <section id="womens" class="container2">
+        <div class="category">
+            <h2>Women's Section</h2>
+            <div class="product">Product 4</div>
+            <div class="product">Product 5</div>
+            <div class="product">Product 6</div>
+        </div>
+    </section>
+
+    <section id="kids" class="container3">
+        <div class="category">
+            <h2>Kids Section</h2>
+            <div class="product">Product 7</div>
+            <div class="product">Product 8</div>
+            <div class="product">Product 9</div>
+        </div>
+    </section>
+
+    <section id="accessories" class="container4">
+        <div class="category">
+            <h2>Accessories</h2>
+            <div class="product">Product 10</div>
+            <div class="product">Product 11</div>
+            <div class="product">Product 12</div>
+        </div>
+    </section>
+
+    <section id="sale" class="container5">
+        <div class="category">
+            <h2>Sale</h2>
+            <div class="product">Product 13</div>
+            <div class="product">Product 14</div>
+            <div class="product">Product 15</div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 My E-Commerce Store - All Rights Reserved
+    </footer>
+
+</body>
+</html>
